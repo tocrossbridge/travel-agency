@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência de Viagem | Orçamento</title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+
+  <body>
+
+    <section>
+      <div class="container">
+        <div>
+          <h2>Faça seu orçamento agora!</h2>
+          <p>Preencha o formulário para obter um valor prévio online, em tempo real e sem compromisso com cadastro!
+          </p>
+        </div>
+
+        <form action="">
+          <!-- DADOS DE CONTATO -->
+          <fieldset>
+            <legend>Dados de Contato</legend>
+            <label for="name">Nome</label>
+            <input type="text" placeholder="Digite seu nome" />
+
+            <label for="lastName">Sobrenome</label>
+            <input type="text" placeholder="Digite seu sobrenome" />
+
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="example@email.com" />
+          </fieldset>
+
+          <!-- DATAS DA VIAGEM -->
+          <fieldset>
+            <legend>Data da viagem</legend>
+            <label for="dateStart">Data de ida</label>
+            <input type="date" placeholder="DD/MM/AAAA" />
+
+            <label for="dateEnd">Data de volta</label>
+            <input type="date" placeholder="DD/MM/AAAA" />
+          </fieldset>
+
+          <!-- SERVIÇOS -->
+          <fieldset>
+            <legend for="services">Serviços desejados</legend>
+
+            <label for="passagens">
+              <input type="checkbox" name="passagens" id="" value="passagens">Passagens
+            </label>
+
+            <label for="hospedagem">
+              <input type="checkbox" name="hospedagem" id="" value="hospedagem">Hospedagem
+            </label>
+
+            <label for="veiculos">
+              <input type="checkbox" name="veiculos" id="" value="veiculos">Veículos
+            </label>
+          </fieldset>
+
+          <!-- MONTADORA DE PREFERÊNCIA -->
+          <fieldset>
+            <legend>Veículos</legend>
+            <label for="marcaVeiculo">
+              Alguma marca de preferência?<br>
+              <select name="marcaVeiculo" id="">
+                <option value="volvo">Volvo</option>
+                <option value="ferrari">Ferrari</option>
+                <option value="" selected>Tanto faz</option>
+              </select>
+            </label>
+          </fieldset>
+
+          <!-- MEIO DE PAGAMENTO -->
+          <fieldset>
+            <legend>Forma de pagamento</legend>
+            <label for="payment">
+              <input type="radio" name="payment" id="payment" value="pix">
+              PIX
+            </label>
+
+            <label for="payment">
+              <input type="radio" name="payment" id="payment" value="boleto">
+              Boleto
+            </label>
+
+            <label for="payment">
+              <input type="radio" name="payment" id="payment" value="cartaoDebito">
+              Cartão de Débito
+            </label>
+
+            <label for="payment">
+              <input type="radio" name="payment" id="payment" value="cartaoCredito">
+              Cartão de Crédito
+            </label>
+          </fieldset>
+
+          <!-- PRAZO DE PAGAMENTO -->
+          <fieldset>
+            <legend>Prazo de pagamento</legend>
+            <label for="prazoPagamento">
+              <select name="prazoPagamento" id="prazoPagamento">
+                <option value="aVista">À vista</option>
+                <option value="5x">5 vezes sem juros</option>
+                <option value="10x">10 vezes com juros</option>
+              </select>
+            </label>
+          </fieldset>
+
+          <!-- INFORMAÇÕES ADICIONAIS -->
+          <fieldset>
+            <legend for="additionalInfo">Informações adicionais</legend>
+            <textarea name="additionalInfo" id="additionalInfo" cols="30" rows="10"></textarea>
+          </fieldset>
+
+          <input type="submit" value="Salvar">
+        </form>
+      </div>
+    </section>
+
+  </body>
+
+</html>
