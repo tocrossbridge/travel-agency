@@ -1,0 +1,38 @@
+/* FOOTER */
+:root {
+  --footer-bg: #212121;
+  --footer-text-clr: #afafaf;
+
+  --footer-divider: #ff4500;
+}
+
+footer {
+  padding: 2em;
+  display: grid;
+  grid-template-columns: repeat(auto, minmax(300px, 600px));
+
+  background-color: var(--footer-bg);
+
+  text-align: center;
+  color: var(--footer-text-clr);
+}
+
+footer .divider {
+  margin: auto 1em;
+  color: var(--footer-divider);
+}
+
+@media screen and (min-width: 1200px) {
+  footer {
+    padding: 2em 10em;
+    grid-template-columns: auto minmax(300px, 1fr) auto;
+  }
+
+  footer div:first-child {
+    text-align: start;
+  }
+
+  footer div:last-child {
+    text-align: end;
+  }
+}

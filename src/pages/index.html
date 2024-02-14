@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência de Viagem | Home</title>
+    <link rel="stylesheet" href="../assets/css/index.css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./index.html#pacotes">Pacotes</a>
+          </li>
+          <li>
+            <a href="./index.html#taxas">Taxas</a>
+          </li>
+          <li>
+            <a href="./index.html#orcamento">Orçamento</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div>
+        <h1>Venha realizar a viagem dos seus sonhos!</h1>
+      </div>
+    </header>
+
+    <main>
+      <!-- PACOTES -->
+      <section id="pacotes">
+        <!-- DESCRIÇÃO -->
+        <h2>Conheça nossos pacotes</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nisl est, laoreet quis venenatis a,
+          convallis quis
+          tortor. Nulla a ante non nisi molestie molestie. Vivamus hendrerit dignissim quam, a cursus mi posuere a.
+          Phasellus vel
+          venenatis enim. Curabitur sed iaculis massa. Vestibulum aliquam lectus et tellus volutpat, at varius tellus
+          sagittis.
+          Nullam a gravida elit, a porta mi.
+        </p>
+        <hr>
+
+        <!-- TODO: cto -->
+
+        <!-- IMAGENS -->
+        <div class="figuras">
+          <figure>
+            <img src="../assets/img/gramado.jpg" alt="Imagem de rua de Gramado">
+            <figcaption>gramado</figcaption>
+          </figure>
+
+          <figure>
+            <img src="../assets/img/porto-seguro.jpeg" alt="Praia em Porto Seguro">
+            <figcaption>Porto Seguro</figcaption>
+          </figure>
+
+          <figure>
+            <img src="../assets/img/rio-de-janeiro.webp" alt="Rio de Janeiro">
+            <figcaption>Rio de Janeiro</figcaption>
+          </figure>
+        </div>
+
+        <!-- VIDEO -->
+        <div class="videos">
+          <video controls width="500px">
+            <source src="../assets/video/rabbit320.mp4" type="video/mp4">
+            Seu navegador não suporta o formato do vídeo.
+            <a href="../assets/video/rabbit320.mp4">Clique aqui para baixar</a>
+          </video>
+        </div>
+      </section>
+
+
+      <!-- TAXAS -->
+      <section id="taxas">
+        <h2>Taxas de Serviço</h2>
+        <table>
+          <caption>Descrição dos serviços e respectivos valores</caption>
+          <thead>
+            <tr>
+              <th>Serviço</th>
+              <th>Valor</th>
+            </tr>
+            <tr>
+              <td>Reserva de Hotel</td>
+              <td>R$ 150,00</td>
+            </tr>
+            <tr>
+              <td>Compra de passagens</td>
+              <td>R$ 100,00</td>
+            </tr>
+            <tr>
+              <td>Aluguel de carros</td>
+              <td>R$ 50,00</td>
+            </tr>
+          </thead>
+        </table>
+      </section>
+
+      <!-- ORÇAMENTO -->
+      <section id="orcamento">
+        <h2>Orçamento</h2>
+        <form method="GET" action="">
+          <fieldset>
+            <legend>Dados da viagem</legend>
+            <label for="nome">
+              Nome
+              <input type="text" name="nome" />
+            </label>
+
+            <label for="email">
+              Email
+              <input type="email" name="email" />
+            </label>
+
+            <label for="dataIda">
+              Data de ida
+              <input type="date" name="dataIda" />
+            </label>
+
+            <label for="dataVolta">
+              Data da volta
+              <input type="date" name="dataVolta" />
+            </label>
+
+            <label for="qtdPessoas">
+              Quantidade de pessoas
+              <input type="number" name="qtdPessoas" />
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Quais serviços deseja contratar?</legend>
+            <label for="passagens">
+              <input type="checkbox" name="passagens" value="passagens" />
+              Compra de passagens
+            </label>
+            <label for="hospedagem">
+              <input type="checkbox" name="hospedagem" value="hospedagem" />
+              Reserva de hospegadem
+            </label>
+            <label for="veiculos">
+              <input type="checkbox" name="veiculos" value="veiculos" />
+              Reserva de veículos
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Escolha a forma de pagamento</legend>
+
+            <label for="formaPagamento">
+              <input type="radio" name="formaPagamento" value="Cartão de crédito" />Cartão de crédito
+            </label>
+
+            <label for="formaPagamento">
+              <input type="radio" name="formaPagamento" value="Boleto" />Boleto
+            </label>
+
+            <label for="formaPagamento">
+              <input type="radio" name="formaPagamento" value="PIX" />PIX
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Escolha o prazo de pagamento</legend>
+            <select name="prazoPagamento">
+              <option value="aVista">À vista</option>
+              <option value="5x">5x sem juros</option>
+              <option value="10x" selected>10x com juros</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Comentários</legend>
+            <textarea name="comentario" cols="5"></textarea>
+          </fieldset>
+
+          <button class="btn">Salvar</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div>
+        <span>
+          2024, Agência de Viagens
+          -
+          desenvolvido por
+          <a href="https://instagram.com/underdogbytes">UnderdogBytes</a> ♡
+        </span>
+      </div>
+
+      <div>
+        <a href="./termos-privacidade.html">Termos de Privacidade</a>
+        <span class="divider">|</span>
+        <a href="./termos-condicoes.html">Termos e Condições</a>
+      </div>
+    </footer>
+  </body>
+
+</html>

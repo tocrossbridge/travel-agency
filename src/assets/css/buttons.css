@@ -1,0 +1,19 @@
+/*  BUTTONS */
+:root {
+  --btn-bg-default: #1aabdf;
+  --btn-text-default: #ffffff;
+}
+
+.btn {
+  width: 100%;
+  padding: .5em 1em;
+
+  border: 1px solid var(--btn-bg-default);
+  border-radius: .2em;
+
+  background-color: var(--btn-bg-default);
+
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--btn-text-default);
+}

@@ -1,0 +1,35 @@
+/* FORMS */
+:root {
+  --form-border: #cccccc;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1em;
+
+  border: 1px solid var(--form-border);
+  border-radius: 1em;
+}
+
+fieldset {
+  margin: 1em auto;
+  display: grid;
+}
+
+
+input:not([type=checkbox]):not([type="radio"]) {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+label input[type=text],
+label input[type=email],
+label input[type=date],
+label input[type=number] {
+  display: grid;
+}
+
+textarea {
+  width: 100%;
+}

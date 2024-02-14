@@ -1,0 +1,35 @@
+/* NAVEGAÇÃO */
+:root {
+  --nav-bg: #f03b3b;
+  --nav-text-clr: #ffffff;
+  --nav-text-clr-hover: #2f2f2f;
+}
+
+nav {
+  height: 50px;
+  padding-right: 40px;
+
+  background-color: var(--nav-bg);
+
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  padding: 10px;
+  color: var(--nav-text-clr);
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: var(--nav-text-clr-hover);
+}

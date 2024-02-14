@@ -1,0 +1,36 @@
+/* TABLES */
+:root {
+  --table-thead-bg: #f4511e;
+  --table-thead-text-clr: #ffffff;
+
+  --table-odd: #bdbdbd;
+  --table-odd-even: #e9e9e9;
+
+  --table-text-clr: #303030;
+}
+
+table {
+  width: 100%;
+}
+
+table td {
+  color: var(--table-text-clr);
+  padding: 5px;
+}
+
+table tr:nth-child(even) {
+  background-color: var(--table-odd-even);
+}
+
+table tr:nth-child(odd) {
+  background-color: var(--table-odd);
+}
+
+table thead th {
+  background-color: var(--table-thead-bg);
+
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--table-thead-text-clr);
+}
