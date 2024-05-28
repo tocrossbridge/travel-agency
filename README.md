@@ -9,3 +9,8 @@ Feito com HTML, CSS e JavaScript.
 Repository for website template for fictitious travel agency.
 
 Made with HTML, CSS and JavaScript.
+
+## Project Status
+
+- Code Review
+- Melhorar UI
